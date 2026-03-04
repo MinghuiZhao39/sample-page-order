@@ -3,7 +3,7 @@ const EXPERIMENT_SECTIONS = [
     id: "quantisation-exp",
     title: "Quantisation Experiment",
     description:
-      "These audio samples are from quantisation experiments. It is surprising that quantisation level 1 can still be somewhat intelligible. Audio at quantisation levels 2 and 3 can be unpleasant to the ears, so please <strong>turn your volume down</strong> before playing.",
+      "These audio samples are from quantisation experiments. It is surprising that quantisation level 2 can still be somewhat intelligible. Audio at quantisation levels 2 and 3 can be unpleasant to the ears, so please <strong>turn your volume down</strong> before playing.",
     basePath: "assets/audio/quantisation-exp",
     warningFolders: ["2", "3"],
     warningText: "can be unpleasant, turn volume down",
