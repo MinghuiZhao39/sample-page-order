@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: canvas;
+  color: canvastext;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.9rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.experiments {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.experiment-section {
+  border: 1px solid color-mix(in oklab, canvastext 18%, canvas 82%);
+  border-radius: 14px;
+  padding: 1rem;
+  background: color-mix(in oklab, canvas 97%, canvastext 3%);
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.section-description {
+  margin: 0.45rem 0 1rem;
+  opacity: 0.85;
+  font-size: 0.92rem;
+}
+
+.card {
+  border: 1px solid color-mix(in oklab, canvastext 22%, canvas 78%);
+  border-radius: 12px;
+  padding: 1rem;
+  background: color-mix(in oklab, canvas 94%, canvastext 6%);
+}
+
+.card h2,
+.card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.variant-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.variant-row {
+  border-top: 1px solid color-mix(in oklab, canvastext 15%, canvas 85%);
+  padding-top: 0.6rem;
+}
+
+.variant-row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.variant-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.variant-label.warning {
+  font-weight: 600;
+}
+
+.variant-label.warning strong {
+  font-weight: 800;
+}
+
+audio {
+  width: 100%;
+}
+
+.empty {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px dashed color-mix(in oklab, canvastext 25%, canvas 75%);
+}
