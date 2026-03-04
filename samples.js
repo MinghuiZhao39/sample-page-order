@@ -3,7 +3,7 @@ const EXPERIMENT_SECTIONS = [
     id: "quantisation-exp",
     title: "Quantisation Experiment",
     description:
-      "It is surprising that quantisation level 2 can still be somewhat intelligible.",
+      "These audio samples are from quantisation experiments. It is surprising that quantisation level 1 can still be somewhat intelligible. Audio at quantisation levels 2 and 3 can be unpleasant to the ears, so please <strong>turn your volume down</strong> before playing.",
     basePath: "assets/audio/quantisation-exp",
     warningFolders: ["2", "3"],
     warningText: "can be unpleasant, turn volume down",
@@ -19,5 +19,37 @@ const EXPERIMENT_SECTIONS = [
       { folder: "10000", label: "Quantisation 10000" },
     ],
     sampleIds: ["LJ001-0110", "LJ002-0018", "LJ002-0043"],
+  },
+  {
+    id: "order-exp",
+    title: "Order Experiment",
+    description:
+      "Comparison across different decoding-order settings on the same utterances.",
+    basePath: "assets/audio/order-exp",
+    variants: [
+      {
+        folder: "vocoded-references-test-dataset",
+        label: "Vocoder reference",
+      },
+      { folder: "whole-utt-gradtts-run1", label: "grad-100" },
+      { folder: "whole-utt-gradtts-length-run1", label: "grad-L" },
+      { folder: "original-run1", label: "uro" },
+      { folder: "l2r-run2", label: "l2r" },
+      { folder: "r2l-run3", label: "r2l" },
+      { folder: "top1-sample-run3", label: "top1" },
+      { folder: "topk1", label: "top1*" },
+      { folder: "duration-run2", label: "dur" },
+    ],
+    sampleIds: [
+      "LJ031-0041",
+      "LJ015-0308",
+      "LJ032-0027",
+      "LJ039-0096",
+      "LJ019-0179",
+      "LJ028-0138",
+      "LJ016-0274",
+      "LJ015-0043",
+      "LJ046-0016",
+    ],
   },
 ];

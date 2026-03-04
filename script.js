@@ -35,7 +35,7 @@ if (
     if (section.description) {
       const sectionDescription = document.createElement("p");
       sectionDescription.className = "section-description";
-      sectionDescription.textContent = section.description;
+      sectionDescription.innerHTML = section.description;
       sectionEl.appendChild(sectionDescription);
     }
 
